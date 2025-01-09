@@ -1,10 +1,14 @@
 {
-    "name": "monospice/laravel-redis-sentinel-drivers",
+    "name": "dejwcake/laravel-redis-sentinel-drivers",
     "description": "Redis Sentinel integration for Laravel and Lumen.",
     "keywords": ["redis", "sentinel", "laravel", "lumen"],
     "type": "library",
     "license": "MIT",
     "authors": [
+        {
+            "name": "David Behal",
+            "email": "behal.david@gmail.com"
+        },
         {
             "name": "Cy Rossignol",
             "email": "cy@rossignols.me"
@@ -13,11 +17,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/streamingsystems/spicy-identifiers.git"
+            "url": "https://github.com/jkatruska/spicy-identifiers.git"
         }
     ],
     "require": {
-        "php": ">=5.6.4",
+        "php": "^8.2",
         "illuminate/cache": "^5.4 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
         "illuminate/contracts": "^5.4 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
         "illuminate/queue": "^5.4 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
@@ -26,6 +30,14 @@
         "illuminate/support": "^5.4 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
         "monospice/spicy-identifiers": "^1.0.x-dev",
         "predis/predis": "^1.1 || ^2.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^5.4 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+        "laravel/horizon": "^1.0 || ^2.0 || ^3.0 || ^4.0 || ^5.0",
+        "laravel/lumen-framework": "^5.4 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^11.5",
+        "larastan/larastan": "^2.9"
     },
     "autoload": {
         "psr-4": {

@@ -3,8 +3,9 @@
 namespace Monospice\LaravelRedisSentinel\Tests\Unit\Configuration;
 
 use Monospice\LaravelRedisSentinel\Configuration\Loader;
+use Monospice\LaravelRedisSentinel\RedisSentinelServiceProvider;
 use Monospice\LaravelRedisSentinel\Tests\Support\ApplicationFactory;
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
 class LoaderTest extends TestCase
@@ -209,7 +210,7 @@ class LoaderTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    protected function setUp(): void
     {
         $this->startTestWithBareApplication();
 
